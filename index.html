@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="bg-white h-25 flex justify-between p-5">
+    <header class="bg-gray-100 h-25 flex justify-between p-5">
         <img src="img/logo.svg" class="h-15 w-15">
         <div class="flex justify-between items-center gap-4">
             <img src="img/search.svg" class="h-5 w-5">
@@ -17,20 +17,47 @@
                 <img src="img/gb.svg" class="h-8 w-8 rounded-xl">
                 <p>EN</p>
                 <img src="img/drop.svg" class="w-5 h-5">
-                <div class="turk hidden flex gap-1 items-center">
+                <div class="hidden flex gap-1 items-centerr">
                     <img src="img/tr.svg" class="h-8 w-8 rounded-xl">
                     <p>TR</p>
                     <img src="img/drop.svg" class="w-5 h-5">
                 </div>
             </div>
-            <img src="img/menu.svg" class="h-9 w-9">
+            <div class="links absolute flex flex-row bg-white w-screen top-[-100%] left-0">
+                <ul class="block flex flex-col gap-5 font-bold text-[18px] ml-10">
+                    <li>
+                        <a href="#" class="text-black">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-black">Universities</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-black">Masters</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-black">Language Schools</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-black">Summer Schools </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-black">High School </a>
+                    </li>
+                </ul>
+            </div>
+            <img onclick="menuClick()" src="img/menu.svg" class="h-9 w-9">
         </div>
     </header>
     <div class="w-full h-[100vh] bg-[url('img/maindiv.jpeg')] bg-cover bg-center">
 
     </div>
 
-    
+    <script>
+        function menuClick() {
+            const menus = document.querySelector('.links')
+            menus.classList.toggle('top-[13%]')
+        }
+    </script>
 </body>
 
 </html>
