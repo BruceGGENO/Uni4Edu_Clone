@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!--Header-->
     <header class="bg-gray-100 h-25 flex justify-between p-5">
         <img src="img/logo.svg" class="h-15 w-15">
         <div class="flex justify-between items-center gap-4">
@@ -57,6 +58,7 @@
             <img onclick="menuClick()" src="img/menu.svg" class="h-9 w-9">
         </div>
     </header>
+    <!--First Div-->
     <div class="w-full md:h-[100vh] h-[80vh] sm:h-[80vh] bg-[url('img/maindiv.jpeg')] bg-cover bg-center">
         <div class="w-[60%] lg:w-[60%] sm:w-[90%] relative p-10 text-white top-10">
             <p class="text-[25px] sm:text-[25px] font-extrabold lg:text-[40px]">Find Your Perfect University, Language
@@ -68,15 +70,32 @@
                 digital platform. Manage your entire process—from school selection to application—directly within the
                 system and achieve your academic and career goals online.</p>
             <div class="flex sm:flex-row flex-col gap-2 mt-5">
-                <button class="bg-cyan-300 px-7 py-3 rounded-xl hover:opacity-[0.7] duration-500">Explore
+                <button class="bg-cyan-400 px-7 py-3 rounded-xl hover:opacity-[0.7] duration-500">Explore
                     Programs</button>
                 <button
-                    class="text-cyan-300 border b-cyan-300 bg-white px-7 py-3 rounded-xl hover:opacity-[0.7] duration-500">Get
+                    class="text-cyan-400 border b-cyan-300 bg-white px-7 py-3 rounded-xl hover:opacity-[0.7] duration-500">Get
                     Free Advice</button>
             </div>
 
         </div>
     </div>
+    <div class="rounded-full fixed bottom-15 right-7 bg-white z-20 h-20 w-20">
+        <img src="img/bird.png">
+    </div>
+    <!--PROGRAMS DIV-->
+    <div class="flex justify-center">
+        <div class="flex bg-blue-200 relative mt-[-12%] w-[92%] p-4 rounded-xl opacity-[0.9]">
+            <div class="w-[80%] rounded-lg opacity-[1]">
+                <div class="flex font-semibold text-[18px]">
+                    <button class="px-10 py-3 bg-blue-500 rounded-t-lg text-white">University Programs</button>
+                    <button class="px-10 py-3 bg-white rounded-t-lg">Language Schools</button>
+                    <button class="px-10 py-3 bg-white rounded-t-lg">Summer Schools</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <script>
         function menuClick() {
